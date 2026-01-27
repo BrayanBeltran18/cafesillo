@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cafesillo - Menú</title>
+    <style>
+      #coffee-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      #coffee-list li {
+        margin-bottom: 1rem;
+      }
+
+      #coffee-list img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cafesillo</h1>
+      <p>Hola, <span id="user-name"></span></p>
+    </header>
+    <main>
+      <section aria-labelledby="cafes-title">
+        <h2 id="cafes-title">Nuestros cafés</h2>
+        <ul id="coffee-list"></ul>
+      </section>
+    </main>
+    <script src="main.js" defer></script>
+  </body>
+</html>

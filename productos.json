@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "nombre": "Espresso Clásico",
+    "descripcion": "La base de todo. Un shot intenso de café puro con una capa perfecta de crema.",
+    "precio": 35.00,
+    "popularidad": 75,
+    "categoria": "Caliente",
+    "imagen": "./img/espresso.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Cold Brew",
+    "descripcion": "Infusionado en frío durante 12 horas. Notas de chocolate oscuro y baja acidez, ideal con hielo.",
+    "precio": 55.00,
+    "popularidad": 98,
+    "categoria": "Frío",
+    "imagen": "./img/cold-brew.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Cappuccino Asesino",
+    "descripcion": "Espresso con partes iguales de leche vaporizada y espuma de leche densa.",
+    "precio": 50.00,
+    "popularidad": 92,
+    "categoria": "Caliente",
+    "imagen": "./img/cappuccino.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Latte Vainilla",
+    "descripcion": "Suave leche texturizada con un toque de vainilla sin azúcar. Dulzor equilibrado.",
+    "precio": 60.00,
+    "popularidad": 73,
+    "categoria": "Caliente",
+    "imagen": "./img/latte-vanilla.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Americano Intenso",
+    "descripcion": "Espresso diluido en agua caliente. Sabor fuerte y directo sin distracciones.",
+    "precio": 40.00,
+    "popularidad": 80,
+    "categoria": "Caliente",
+    "imagen": "./img/americano.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Frappé Moka",
+    "descripcion": "Mezcla de café, hielo y chocolate, coronado con crema batida. Dulce y refrescante.",
+    "precio": 65.00,
+    "popularidad": 85,
+    "categoria": "Frío",
+    "imagen": "./img/frappe-moka.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Flat White",
+    "descripcion": "Similar al latte pero con una capa de espuma mucho más fina (microespuma) y doble shot.",
+    "precio": 52.00,
+    "popularidad": 65,
+    "categoria": "Caliente",
+    "imagen": "./img/flat-white.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Cafe a las rocas",
+    "descripcion": "Café filtrado servido sobre hielo. Perfecto para refrescarse sin perder el sabor del grano.",
+    "precio": 45.00,
+    "popularidad": 80,
+    "categoria": "Frío",
+    "imagen": "./img/rocas.jpg"
+  },
+  {
+    "id":9,
+    "nombre": "Caramel Malcriado",
+    "descripcion": "Leche al vapor manchada con espresso y un toque de vainilla, cubierta con un característico dibujo de caramelo. Dulce, intenso y único.",
+    "precio": 55.00,
+    "popularidad": 99,
+    "categoria": "Frío",
+    "imagen": "./img/caramel-malcriado.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Chai Sucio",
+    "descripcion": "El equilibrio perfecto entre especias y cafeína. .",
+    "precio": 58.00,
+    "popularidad": 82,
+    "categoria": "Caliente",
+    "imagen": "./img/chai-sucio.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Espresso Tónico",
+    "descripcion": "La mezcla inesperada pero deliciosa de agua tónica, hielo y un doble shot de espresso.",
+    "precio": 60.00,
+    "popularidad": 70,
+    "categoria": "Frío",
+    "imagen": "./img/espresso-tonico.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Cortado Perfecto",
+    "descripcion": "Espresso cortado con una pequeña cantidad de leche caliente.",
+    "precio": 42.00,
+    "popularidad": 77,
+    "categoria": "Caliente",
+    "imagen": "./img/cortado.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Latte Avellana Helado",
+    "descripcion": "Leche fría, mucho hielo, espresso y un jarabe artesanal de avellana tostada.",
+    "precio": 62.00,
+    "popularidad": 89,
+    "categoria": "Frío",
+    "imagen": "./img/latte-avellana.jpg"
+  }
+]
