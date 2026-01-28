@@ -2,19 +2,67 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="data:," />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cafe: {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0cec7',
+                400: '#d2bab0',
+                500: '#b58a7a',
+                600: '#9d6f53',
+                700: '#8b5e46',
+                800: '#6b4226',
+                900: '#573819',
+              }
+            }
+          }
+        }
+      }
+    </script>
     <title>Cafesillo - Inicio de sesión</title>
   </head>
-  <body>
-    <header>
-      <h1>Cafesillo</h1>
+  <body class="bg-cafe-50 min-h-screen">
+    <header class="bg-cafe-800 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-6">
+        <h1 class="text-3xl font-bold">Cafesillo</h1>
+        <p class="text-cafe-200 mt-1">Inicia sesión para ver el menú</p>
+      </div>
     </header>
-    <main>
-      <section>
-        <h2>Inicia sesión</h2>
-        <form id="login-form">
-          <label for="username">Tu nombre</label>
-          <input type="text" id="username" name="username" required />
-          <button type="submit">Entrar</button>
+    <main class="container mx-auto px-4 py-10">
+      <section aria-labelledby="login-title" class="max-w-md mx-auto">
+        <h2 id="login-title" class="text-2xl font-bold text-cafe-900 mb-6">Inicio de sesión</h2>
+        <form id="login-form" class="bg-white rounded-lg shadow-md p-6 space-y-4">
+          <div>
+            <label for="username" class="block text-sm font-medium text-cafe-900 mb-2">Tu nombre</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              class="w-full rounded-lg border border-cafe-200 bg-white px-3 py-2 text-cafe-900 focus:outline-none focus:ring-2 focus:ring-cafe-600"
+            />
+          </div>
+          <div>
+            <label for="password" class="block text-sm font-medium text-cafe-900 mb-2">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="current-password"
+              class="w-full rounded-lg border border-cafe-200 bg-white px-3 py-2 text-cafe-900 focus:outline-none focus:ring-2 focus:ring-cafe-600"
+            />
+            <p class="text-xs text-cafe-600 mt-2">Campo solo visual (no se valida).</p>
+          </div>
+          <button type="submit" class="w-full bg-cafe-700 hover:bg-cafe-800 text-white px-4 py-2 rounded-lg transition-colors">
+            Entrar
+          </button>
         </form>
       </section>
     </main>

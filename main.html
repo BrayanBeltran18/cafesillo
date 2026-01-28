@@ -2,35 +2,66 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="data:," />
     <title>Cafesillo - Menú</title>
-    <style>
-      #coffee-list {
-        list-style: none;
-        padding: 0;
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cafe: {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0cec7',
+                400: '#d2bab0',
+                500: '#b58a7a',
+                600: '#9d6f53',
+                700: '#8b5e46',
+                800: '#6b4226',
+                900: '#573819',
+              }
+            }
+          }
+        }
       }
-
-      #coffee-list li {
-        margin-bottom: 1rem;
-      }
-
-      #coffee-list img {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        display: block;
-        margin-bottom: 0.5rem;
-      }
-    </style>
+    </script>
   </head>
-  <body>
-    <header>
-      <h1>Cafesillo</h1>
-      <p>Hola, <span id="user-name"></span></p>
+  <body class="bg-cafe-50 min-h-screen">
+    <header class="bg-cafe-800 text-white shadow-lg">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-3xl font-bold">Cafesillo</h1>
+            <p class="text-cafe-200 mt-1">Hola, <span id="user-name"></span></p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button id="favorites-btn" class="bg-cafe-600 hover:bg-cafe-700 px-4 py-2 rounded-lg transition-colors">
+              ❤️ Favoritos
+            </button>
+            <button id="cart-btn" class="bg-cafe-600 hover:bg-cafe-700 px-4 py-2 rounded-lg transition-colors relative">
+              🛒 Carrito
+              <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-6 w-6 flex items-center justify-center">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
+    <main class="container mx-auto px-4 py-8">
       <section aria-labelledby="cafes-title">
-        <h2 id="cafes-title">Nuestros cafés</h2>
-        <ul id="coffee-list"></ul>
+        <h2 id="cafes-title" class="text-2xl font-bold text-cafe-900 mb-6">Nuestros cafés</h2>
+        <div class="mb-6 max-w-sm">
+          <label for="sort" class="block text-sm font-medium text-cafe-900 mb-2">Ordenar por</label>
+          <select id="sort" name="sort" class="w-full rounded-lg border border-cafe-200 bg-white px-3 py-2 text-cafe-900">
+            <option value="none">Sin orden</option>
+            <option value="price_asc">Precio: menor a mayor</option>
+            <option value="price_desc">Precio: mayor a menor</option>
+            <option value="pop_asc">Popularidad: menor a mayor</option>
+            <option value="pop_desc">Popularidad: mayor a menor</option>
+          </select>
+        </div>
+        <div id="coffee-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       </section>
     </main>
     <script src="main.js" defer></script>
